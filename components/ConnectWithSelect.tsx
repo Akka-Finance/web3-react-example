@@ -9,6 +9,7 @@ import { useCallback, useEffect, useState } from 'react'
 
 import { CHAINS, getAddChainParameters } from '../chains'
 import { BitKeep } from '@akkafinance/web3-react-bitkeep'
+import { SafePal } from '@akkafinance/web3-react-safepal'
 
 function ChainSelect({
   activeChainId,
@@ -51,7 +52,7 @@ export function ConnectWithSelect({
   error,
   setError,
 }: {
-  connector: MetaMask | WalletConnect | WalletConnectV2 | CoinbaseWallet | Network | BitKeep | GnosisSafe
+  connector: MetaMask | WalletConnect | WalletConnectV2 | CoinbaseWallet | Network | BitKeep | SafePal | GnosisSafe
   activeChainId: ReturnType<Web3ReactHooks['useChainId']>
   chainIds?: ReturnType<Web3ReactHooks['useChainId']>[]
   isActivating: ReturnType<Web3ReactHooks['useIsActivating']>

@@ -12,9 +12,10 @@ import { Chain } from './Chain'
 import { ConnectWithSelect } from './ConnectWithSelect'
 import { Status } from './Status'
 import { BitKeep } from '@akkafinance/web3-react-bitkeep'
+import { SafePal } from '@akkafinance/web3-react-safepal'
 
 interface Props {
-  connector: MetaMask | WalletConnect | WalletConnectV2 | CoinbaseWallet | Network | BitKeep | GnosisSafe
+  connector: MetaMask | WalletConnect | WalletConnectV2 | CoinbaseWallet | Network | BitKeep | SafePal | GnosisSafe
   activeChainId: ReturnType<Web3ReactHooks['useChainId']>
   chainIds?: ReturnType<Web3ReactHooks['useChainId']>[]
   isActivating: ReturnType<Web3ReactHooks['useIsActivating']>
