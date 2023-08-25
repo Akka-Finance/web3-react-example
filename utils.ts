@@ -7,6 +7,7 @@ import { WalletConnect as WalletConnect } from '@web3-react/walletconnect'
 import { WalletConnect as WalletConnectV2 } from '@web3-react/walletconnect-v2'
 import { BitKeep } from '@akkafinance/web3-react-bitkeep'
 import { SafePal } from '@akkafinance/web3-react-safepal'
+import { MathWallet } from '@akkafinance/web3-react-mathwallet'
 
 export function getName(connector: Connector) {
   if (connector instanceof MetaMask) return 'MetaMask'
@@ -17,5 +18,6 @@ export function getName(connector: Connector) {
   if (connector instanceof GnosisSafe) return 'Gnosis Safe'
   if (connector instanceof BitKeep) return 'BitKeep'
   if (connector instanceof SafePal) return 'SafePal'
+  if (connector instanceof MathWallet) return 'MathWallet'
   return 'Unknown'
 }

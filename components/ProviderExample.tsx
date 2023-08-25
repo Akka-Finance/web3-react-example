@@ -9,14 +9,16 @@ import { coinbaseWallet, hooks as coinbaseWalletHooks } from '../connectors/coin
 import { hooks as metaMaskHooks, metaMask } from '../connectors/metaMask'
 import { hooks as bitkeepHooks, bitkeep } from '../connectors/bitkeep'
 import { hooks as safepalHooks, safepal } from '../connectors/safepal'
+import { hooks as mathwalletHooks, mathwallet } from '../connectors/mathwallet'
 import { hooks as networkHooks, network } from '../connectors/network'
 import { hooks as walletConnectHooks, walletConnect } from '../connectors/walletConnect'
 import { hooks as walletConnectV2Hooks, walletConnectV2 } from '../connectors/walletConnectV2'
 import { getName } from '../utils'
 import { BitKeep } from '@akkafinance/web3-react-bitkeep'
 import { SafePal } from '@akkafinance/web3-react-safepal'
+import { MathWallet } from '@akkafinance/web3-react-mathwallet'
 
-const connectors: [MetaMask | WalletConnect | WalletConnectV2 | CoinbaseWallet | Network | BitKeep | SafePal, Web3ReactHooks][] = [
+const connectors: [MetaMask | WalletConnect | WalletConnectV2 | CoinbaseWallet | Network | BitKeep | SafePal | MathWallet, Web3ReactHooks][] = [
   [metaMask, metaMaskHooks],
   [walletConnect, walletConnectHooks],
   [walletConnectV2, walletConnectV2Hooks],
@@ -24,6 +26,7 @@ const connectors: [MetaMask | WalletConnect | WalletConnectV2 | CoinbaseWallet |
   [network, networkHooks],
   [bitkeep, bitkeepHooks],
   [safepal, safepalHooks],
+  [mathwallet, mathwalletHooks],
 ]
 
 function Child() {

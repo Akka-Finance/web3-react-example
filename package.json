@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@akkafinance/web3-react-bitkeep": "^1.0.0",
+    "@akkafinance/web3-react-mathwallet": "^1.0.0",
     "@akkafinance/web3-react-safepal": "^1.0.0",
     "@ethersproject/bignumber": "^5.6.0",
     "@ethersproject/experimental": "^5.6.0",

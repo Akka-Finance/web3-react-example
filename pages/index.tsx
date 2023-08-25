@@ -1,6 +1,7 @@
 import BitkeepCard from '../components/connectorCards/BitkeepCard'
 import CoinbaseWalletCard from '../components/connectorCards/CoinbaseWalletCard'
 import GnosisSafeCard from '../components/connectorCards/GnosisSafeCard'
+import MathWalletCard from '../components/connectorCards/MathWalletCard'
 import MetaMaskCard from '../components/connectorCards/MetaMaskCard'
 import NetworkCard from '../components/connectorCards/NetworkCard'
 import SafePalCard from '../components/connectorCards/SafePalCard'
@@ -17,6 +18,7 @@ export default function Home() {
         <MetaMaskCard />
         <BitkeepCard />
         <SafePalCard />
+        <MathWalletCard />
         <WalletConnectV2Card />
         <WalletConnectCard />
         <CoinbaseWalletCard />
